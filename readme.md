@@ -55,7 +55,7 @@ cd pcl-pcl-1.9.1
 mkdir build
 cd build  
 cmake -DCMAKE_BUILD_TYPE=None -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON ..
-make  (make sure your g++ and gcc version matches; make sure your boost version higher than 1.60.0)
+make  (Note: make sure your g++ and gcc version match; make sure your boost version higher than 1.60.0)
 sudo make install
 ```
 
