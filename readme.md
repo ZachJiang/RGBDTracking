@@ -33,12 +33,12 @@ sudo apt-get install mpi-default-dev openmpi-bin openmpi-common
 sudo apt-get install libflann1.8 libflann-dev
 sudo apt-get install libeigen3-dev
 sudo apt-get install libboost-all-dev
-sudo apt-get install libvtk6.2-qt4 libvtk6.2 libvtk6-dev
+sudo apt-get install libvtk6.2-qt4 libvtk6.2 libvtk6-dev (Note: libvtk6.2-qt4 may not be available for Ubuntu 16.04)
 sudo apt-get install libqhull*
 sudo apt-get install libusb-dev
 sudo apt-get install libgtest-dev
 sudo apt-get install git-core freeglut3-dev pkg-config
-sudo apt-get install build-essential libxmu-dev libxi-dev
+sudo apt-get install build-essential libxmu-dev libxi-dev 
 sudo apt-get install libusb-1.0-0-dev graphviz mono-complete
 sudo apt-get install libproj-dev
 sudo apt-get install qt-sdk openjdk-8-jdk openjdk-8-jre
@@ -53,9 +53,9 @@ Sources for PCL 1.9 can be found here https://github.com/PointCloudLibrary/pcl/r
 Unzip and then:
 cd pcl-pcl-1.9.1
 mkdir build
-cd build
+cd build  
 cmake -DCMAKE_BUILD_TYPE=None -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON ..
-make
+make  (make sure your g++ and gcc version matches; make sure your boost version higher than 1.60.0)
 sudo make install
 ```
 
