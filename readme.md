@@ -33,7 +33,7 @@ sudo apt-get install mpi-default-dev openmpi-bin openmpi-common
 sudo apt-get install libflann1.8 libflann-dev
 sudo apt-get install libeigen3-dev
 sudo apt-get install libboost-all-dev
-sudo apt-get install libvtk6.2-qt4 libvtk6.2 libvtk6-dev (Note: libvtk6.2-qt4 may not be available for Ubuntu 16.04)
+sudo apt-get install libvtk6.2-qt4 libvtk6.2 libvtk6-dev Note: libvtk6.2-qt4 may not be available for Ubuntu 16.04
 sudo apt-get install libqhull*
 sudo apt-get install libusb-dev
 sudo apt-get install libgtest-dev
@@ -45,7 +45,7 @@ sudo apt-get install qt-sdk openjdk-8-jdk openjdk-8-jre
 sudo apt-get install phonon-backend-gstreamer
 sudo apt-get install phonon-backend-vlc
 ```
-
+**Note: libvtk6.2-qt4 may not be available for Ubuntu 16.04 --Zach**
 Installation
 
 ```
@@ -55,10 +55,10 @@ cd pcl-pcl-1.9.1
 mkdir build
 cd build  
 cmake -DCMAKE_BUILD_TYPE=None -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON ..
-make  (Note: make sure your g++ and gcc version match; make sure your boost version higher than 1.60.0)
+make  
 sudo make install
 ```
-
+**Note: make sure your g++ and gcc version match; make sure your boost version higher than 1.60.0 --Zach**
 #### Freeimage
 
 ```
@@ -190,9 +190,9 @@ In your build directory
 cd /home/.../sofa/master/build
 ccmake ../src
 ```
-Note: For sofa v1906, you may need to refer to this  https://www.sofa-framework.org/community/forum/topic/undefined-reference-to-boostprogram_optionsabstrac_variables_mapoperator/ to solve boost reference problem.
+**Note: For sofa v1906, you may need to refer to this  https://www.sofa-framework.org/community/forum/topic/undefined-reference-to-boostprogram_optionsabstrac_variables_mapoperator/ to solve boost reference problem. --Zach**
 
-Note: failed to make under sofa v1906, roll back to v1812
+**Note: failed to make under sofa v1906, roll back to v1812 --Zach**
 
 In the cmake GUI, activate the plugin 'RGBDTracking' and the plugin 'image', set 'OpenCV_DIR' to the build directory of your compiled OpenCV,
 and if CUDA 7.0 is installed, set 'CUDA_HOST_COMPILER' to /usr/bin/g++-4.8
