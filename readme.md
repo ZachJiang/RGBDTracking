@@ -46,6 +46,7 @@ sudo apt-get install phonon-backend-gstreamer
 sudo apt-get install phonon-backend-vlc
 ```
 **Note: libvtk6.2-qt4 may not be available for Ubuntu 16.04 --Zach**
+
 Installation
 
 ```
