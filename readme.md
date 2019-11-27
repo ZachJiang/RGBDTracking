@@ -190,7 +190,9 @@ In your build directory
 cd /home/.../sofa/master/build
 ccmake ../src
 ```
-For v1906, you may need to refer to this  https://www.sofa-framework.org/community/forum/topic/undefined-reference-to-boostprogram_optionsabstrac_variables_mapoperator/ to solve boost reference problem.
+Note: For sofa v1906, you may need to refer to this  https://www.sofa-framework.org/community/forum/topic/undefined-reference-to-boostprogram_optionsabstrac_variables_mapoperator/ to solve boost reference problem.
+
+Note: failed to make under sofa v1906, roll back to v1812
 
 In the cmake GUI, activate the plugin 'RGBDTracking' and the plugin 'image', set 'OpenCV_DIR' to the build directory of your compiled OpenCV,
 and if CUDA 7.0 is installed, set 'CUDA_HOST_COMPILER' to /usr/bin/g++-4.8
