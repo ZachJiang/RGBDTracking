@@ -81,7 +81,7 @@ cd build
 ccmake -DUSE_apps=ON ..
 
 set the OPENCV_DIR in the ccmake to the build or install directory of OpenCV 3
-eg: set("OPENCV_DIR" "/usr/local/share/OpenCV/OpenCVConfig.cmake")
+reference: https://gforge.inria.fr/forum/forum.php?max_rows=75&style=nested&offset=688&forum_id=1295&group_id=397
 
 make
 sudo make install
